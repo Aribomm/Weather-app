@@ -1,0 +1,183 @@
+/* Set global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.panel {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2.city {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.searchbar {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: none;
+  width: 80%;
+  margin-right: 0.5rem;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.searchbar:hover {
+  box-shadow: 0 0 5px 0 #fff;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+  box-shadow: 0 0 5px 0 #fff;
+}
+
+
+
+.group.secondary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.temp {
+  position: relative;
+  overflow: hidden;
+}
+.temp i {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 3rem;
+  margin-left: -0.5rem;
+}
+
+.temp span {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.fahrenheit,
+.celsius {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.temperature .fahrenheit,
+.temperature .celsius {
+transition: all 0.2s ease-in-out;
+}
+
+.temperature .celsius.active {
+color: #ffffff;
+font-size: 2rem;
+}
+
+.temperature .celsius.active:hover {
+color: #fff;
+font-size: 2rem;
+}
+
+
+.celsius.active {
+  color: #ffffff;
+}
+
+
+
+.icon {
+  width: 5rem;
+  margin-left: 1rem;
+}
+.icon {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.forecast {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+hr {
+  border-color: #fff;
+  margin: 2rem auto;
+  width: 50%;
+}
+
+footer {
+  font-size: 1rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  h2.city {
+    font-size: 2rem;
+  }
+
+  .temp {
+    font-size: 6rem;
+  }
+
+  .temp i {
+    font-size: 2rem;
+  }
+
+  .temp span {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    
+</head>
+<body>
+    
+  <main>
+    <div class='wrapper'>
+      <div class='panel'>
+       <search>
+         <form>
+           <input class='searchbar transparent' id='search' type='text' placeholder='region, city, country'>
+           <input class='button transparent' id='button' type="submit" value='Search'>
+         </form>
+       </search>
+            <h2 class='city' id='city'></h2>
+              <div class='weather' id='weather'>
+               <div class='group secondary'>
+                 <h3  class="date" id='dt'>jj/mm/aaaa</h3>
+                 <h3 class='country'>Pays</h3>
+              </div>
+                <div class='group secondary'>
+                 <h3 class="speed" id='wind'>Vente</h3>
+                 <h3 class="humidity" id='percipitation'>Percipitation</h3>
+              </div>
+              <div class='temperature' id='temperature'>
+                <h1 class='temp' id='temp'>11<i id='condition'></i> <span id='num'></span><a class='fahrenheit' id='fahrenheit' href="#">&deg;F</a><span class='divider secondary'>|</span><a class='celsius active' id='celsius' href="#">&deg;C</a></h1>
+                    <img src="/Images;Icons/sun.png" class="icon" id="icon">
+               </div><br>
+               <div class='forecast' id='forecast'>Sunny day today, enjoy!</div>
+         </div>
+         <hr>
+         <br>
+         <h4>All Rights Reserved:&copy;Arnold@weather.org Mars 2023</h4>
+      </div>
+     </div>
+  </main>
+ 
+<footer>
+  
+</footer>
+
+
+</body>
+<script src="/Javascript/dyn.js"></script>
+</html>
