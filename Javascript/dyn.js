@@ -24,7 +24,7 @@ let weather = {
     const { localtime } = data.location;
     const { country } = data.location;
     console.log(name, icon, text, temp_c, humidity, wind_kph, localtime, country);
-    document.querySelector(".city").innerText = "Weather in " + name;
+    document.querySelector(".city").innerText = name;
     document.querySelector(".icon").src = "http://cdn.weatherapi.com/weather/64x64/day/113.png";
     document.querySelector(".forecast").innerText = text;
     document.querySelector(".temp").innerText = temp_c + temper + " °C";
